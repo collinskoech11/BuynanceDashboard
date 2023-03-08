@@ -11,13 +11,12 @@ import {
   CNavLink,
   CNavItem,
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
+// import CIcon from '@coreui/icons-react'
+// import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 
 import { AppBreadcrumb } from './index'
 import { AppHeaderDropdown } from './header/index'
-import { logo } from '../assets/brand/logo'
-
+import buyn from "../assets/images/buyn.png"
 const AppHeader = () => {
   const dispatch = useDispatch()
   const sidebarShow = useSelector((state) => state.sidebarShow)
@@ -32,7 +31,7 @@ const AppHeader = () => {
           <img src="https://static.thenounproject.com/png/4027495-200.png" alt="more tabs icon" style={{width:"30px"}}/>
         </CHeaderToggler>
         <CHeaderBrand className="mx-auto d-md-none" to="/">
-          <h3>Buynance</h3>
+          <img src={buyn} alt="this is buynance" style={{width:"30px"}}/>
           {/* <CIcon icon={logo} height={48} alt="Logo" /> */}
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
@@ -51,7 +50,7 @@ const AppHeader = () => {
         <CHeaderNav>
           <CNavItem>
             <CNavLink href="#">
-              <CIcon icon={cilBell} size="lg" />
+              <img style={{width:"20px"}} src="https://www.nicepng.com/png/detail/849-8492073_notification-logo.png" alt="notifications icon logo"/>
             </CNavLink>
           </CNavItem>
           <CNavItem>
