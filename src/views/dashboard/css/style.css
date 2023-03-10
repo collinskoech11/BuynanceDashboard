@@ -1,0 +1,23 @@
+.profile-card{
+    max-width: 500px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-bottom: 20px;
+}
+.profile-card-text{
+    display:"flex";
+    flex-direction:"column";
+     justify-content:"center";
+    line-height:"100px";
+}
+@media screen and (max-width:1000px){
+    .profile-card{
+        grid-template-columns:1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.profile-card img{
+
+}

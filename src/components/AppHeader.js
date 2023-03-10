@@ -47,7 +47,7 @@ const AppHeader = () => {
             <CNavLink href="#">Settings</CNavLink>
           </CNavItem>
         </CHeaderNav>
-        <CHeaderNav>
+        {/* <CHeaderNav>
           <CNavItem>
             <CNavLink href="#">
               <img style={{width:"20px"}} src="https://www.nicepng.com/png/detail/849-8492073_notification-logo.png" alt="notifications icon logo"/>
@@ -63,7 +63,7 @@ const AppHeader = () => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJo24NM8fBpenGpmzpDny8YdDSEQS7ZI9xMg_oCMR7Q&s" style={{width:"30px"}} alt="message icon text"/>
             </CNavLink>
           </CNavItem>
-        </CHeaderNav>
+        </CHeaderNav> */}
         <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
         </CHeaderNav>

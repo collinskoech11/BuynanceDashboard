@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/style.css"
 import {
   CCard,
   CCardBody,
@@ -26,7 +25,6 @@ import {
   cifIn,
   cifPl,
   cifUs,
-
 } from "@coreui/icons";
 
 import avatar1 from "../../assets/images/avatars/1.jpg";
@@ -36,7 +34,9 @@ import avatar4 from "../../assets/images/avatars/4.jpg";
 import avatar5 from "../../assets/images/avatars/5.jpg";
 import avatar6 from "../../assets/images/avatars/6.jpg";
 
-const Dashboard = () => {
+const BuyOrders = () => {
+  const random = (min, max) =>
+    Math.floor(Math.random() * (max - min + 1) + min);
 
   const tableExample = [
     {
@@ -131,17 +131,6 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="profile-card">
-        <div>
-          <img src="https://res.cloudinary.com/demo/image/upload/r_20/front_face.png" style={{width:"200px"}}/>
-        </div>
-        <div className="profile-card-text">
-          <h3>John Doe</h3>
-          <h4>john@doe.com</h4>
-          <h5>addr:ucidsciudscisdoaufrofa</h5>
-          <h5>0712345678</h5>
-        </div>
-      </div>
       <CRow>
         <CCol xs>
           <CCard className="mb-4">
@@ -187,7 +176,7 @@ const Dashboard = () => {
               </CRow>
 
               <br />
-              <h3>Past Transactions</h3>
+              <h3>Past TRansactions</h3>
               <CTable align="middle" className="mb-0 border" hover responsive>
                 <CTableHead color="light">
                   <CTableRow>
@@ -223,4 +212,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default BuyOrders;
