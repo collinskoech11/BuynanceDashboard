@@ -31,14 +31,14 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'BUy Crypto',
-    to: '/buy_order',
+    name: 'Buy Crypto',
+    to: '/buy_crypto',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Sell Crypto',
-    to: '/sell_order',
+    to: '/sell_crypto',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
